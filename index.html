@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Home - Component CSS</title>
+		<style>
+			.centerDiv 
+			{
+			    position:fixed;
+			    top: 50%;
+			    left: 50%;
+			    width:30em;
+			    height:18em;
+			    margin-top: -9em; 
+			    margin-left: -15em;
+			    
+			    font-family: Courier;
+			    font-size: 28px;
+			}
+			.getStartedBtn {
+				display:none;
+				background-color: #4682B4;
+				color: #FFFFFF;
+ 				font-size: 20px;
+ 				border-radius: 15px;
+ 				height: 50px;
+ 				width: 30%;
+			}
+			.para {
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div class="centerDiv">
+				<br />
+				<p id="divHeader" name="divHeader"></p>
+				<p id="divText" name="divText"></p>
+				<p id="divTextDesc" name="divTextDesc"></p>
+				<br />
+				<button class="getStartedBtn" id="getstarted" name="getstarted">Get Started</button>
+				<p class="para" id="copyPara" name="copyPara">&copy; ComponentCSS. 2017<br /><a href = "">Know more</a></p>
+			</div>
+		</center>
+		<script>
+			function showButton() {
+				var btn = document.getElementById("getstarted");
+				btn.style.display = "block";
+			}
+			function showPara() {
+				var para = document.getElementById("copyPara");
+				para.style.display = "block";
+			}
+			function showHeader() {
+				var heading = "Component UI v0.1";
+				var index = 0;
+		        var displayText = setInterval(function() {
+		        	document.getElementById("divHeader").innerHTML+=heading[index];
+		        	index++;
+		        	if(index == heading.length){
+		           		clearInterval(displayText);
+		        	}
+		    	}, 140);
+			}
+			function showText() {
+				var heading =  "Writing CSS to design a UI module, how about UI Components for your appetite? \
+								Component UI comes directly with detachable CSS UI components \
+								for the next cool web app you are developing. It's simple and free \
+								with easily adaptability. Let's get started";
+		    	var index = 0;
+		        var displayText = setInterval(function() {
+		        	document.getElementById("divText").innerHTML+=heading[index];
+		        	index++;
+		        	if(index == heading.length){
+		           		clearInterval(displayText);
+		           		showButton();
+		           		showPara();
+		        	}
+		    	}, 140);
+		    }
+		    showHeader();
+		    showText();
+		</script>
+	</body>
+</html>
