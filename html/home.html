@@ -3,69 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>Compnent UI - Home</title>
-<link href="./componentui.css" type="text/css" rel="stylesheet">
-<style type="text/css">
-    * {
-        margin: 0;
-        border: 0;
-        font-family: Garamond;
-    }
-    body{        
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    .fixed-header {
-        width: 100%;
-        position: fixed;        
-        background: rgba(0,0,0,0.2);
-        padding: 10px 0;
-        color: #000;
-    }
-    .fixed-header{
-        font-size: 22px;
-        top: 0;
-    }
-    .container{
-        width: 80%;
-        margin: 1 auto;
-        padding: 4px;
-    }
-    #cui-link {
-        font-size: 24px;
-        text-decoration: none;
-        border-left: 6px solid #EE88FF;
-        border-bottom: 2px solid red;
-        padding: 1px;
-        position: fixed;
-    }
-    #cui-link:hover {
-        color: #EE88EE;
-        padding: 3px;
-        border: none;
-    } 
-
-    .wrap {
-        height: 50px; padding: 2px;
-    }
-
-    .main-container {
-        background-color: #FFFFFF;
-        border: 6px solid #EE88FF;
-        height: auto;
-        margin: 0;
-        border: 0;
-        font-family: Garamond;
-        font-size: 24px;
-    }
-    .main-heading {
-        background-color: #E0FFFF;
-        padding: 2px;
-        border-radius: 8px;
-    }
-    .main-subject {
-        padding: 2px; 
-    }
-</style>
+<meta name="viewport" content="width=device-width" />
+<link href="../css/componentui.css" type="text/css" rel="stylesheet" />
+<link href="../css/global.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <div class="fixed-header">
@@ -81,7 +21,8 @@
                 <a href="#tables" id="cui-link">Tables</a><br />
                 <a href="#logincard" id="cui-link">Login</a><br />
                 <a href="#profilecard" id="cui-link">Profile Card</a><br />
-                <a href="#linkcard" id="cui-link">Link Card</a>
+                <a href="#linkcard" id="cui-link">Link Card</a><br />
+                <a href="#tabcard" id="cui-link">Tab Card</a>
             </div>
             <div style="width:79.3%; float: left; font-size: 26px;">
                 <div id="getstarted">
@@ -158,7 +99,7 @@
                     <div class="main-subject">
                         In an HTML page, copy and paste any of the above lines of button, based on the neccesity inside the body tag.<br />
                         The only depedency is that you need to include the Component UI CSS file which is given below,
-                        <textarea class="cc-textarea" readonly><link href="componentui.css" type="text/css" rel="stylesheet"></textarea>
+                        <textarea class="cc-textarea-link" readonly><link href="https://kingslair.github.io/ComponentUI/css/componentui.css" type="text/css" rel="stylesheet"></textarea>
                         Once done, view your HTML page and see the changes.
                     </div>
                 </div>
@@ -244,7 +185,7 @@
                     <div class="main-subject">
                         In an HTML page, copy and paste the above lines metioned in Usage, inside the body tag.<br />
                         The only dependency is that you need to include the Component UI CSS file which is given below,
-                        <textarea class="cc-textarea" readonly><link href="componentui.css" type="text/css" rel="stylesheet"></textarea>
+                        <textarea class="cc-textarea-link" readonly><link href="https://kingslair.github.io/ComponentUI/css/componentui.css" type="text/css" rel="stylesheet"></textarea>
                         Once done, view your HTML page and see the changes.
                     </div>
                 </div>
@@ -281,7 +222,7 @@
                                     </tr>
                                     <tr>
                                         <td class="td-login">
-                                            Are you a new user? <a href="" class="cc-login-link">Register here</a>
+                                            Are you a new user? <a href="#" class="cc-login-link">Register here</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -326,7 +267,7 @@
                                     </tr>
                                     <tr>
                                         <td class="td-login">
-                                            Are you a new user? <a href="#" class="cc-login-link">Register here</a>
+                                            Are you a new user? <a href="" class="cc-login-link">Register here</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -347,7 +288,7 @@
                     <div class="main-subject">
                         In an HTML page, copy and paste the above lines metioned in Usage, inside the body tag.<br />
                         The only dependency is that you need to include the Component UI CSS file which is given below,
-                        <textarea class="cc-textarea" readonly><link href="componentui.css" type="text/css" rel="stylesheet"></textarea>
+                        <textarea class="cc-textarea-link" readonly><link href="https://kingslair.github.io/ComponentUI/css/componentui.css" type="text/css" rel="stylesheet"></textarea>
                         Once done, view your HTML page and see the changes.
                     </div>
                 </div>
@@ -433,7 +374,7 @@
                         <div class="main-subject">
                             In an HTML page, copy and paste the above lines metioned in Usage, inside the body tag.<br />
                             The only dependency is that you need to include the Component UI CSS file which is given below,
-                            <textarea class="cc-textarea" readonly><link href="componentui.css" type="text/css" rel="stylesheet"></textarea>
+                            <textarea class="cc-textarea-link" readonly><link href="https://kingslair.github.io/ComponentUI/css/componentui.css" type="text/css" rel="stylesheet"></textarea>
                             Once done, view your HTML page and see the changes.
                         </div>
                     </div>
@@ -448,8 +389,13 @@
                                 <center>
                                     <div class="cc-link-card">
                                         <div class="cc-link-head">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Lorem ipsum dolor sit amet.<br />
+                                            consectetur adipiscing elit.<br /> 
+                                            incididunt ut labore et dolore.<br />
+                                            magna aliqua. Ut enim ad minim.<br />
+                                            veniam, quis nostrud exercitation.<br />
                                         </div>
+                                        <br />
                                         <div class="cc-link-desc">
                                             <table>
                                                 <thead>
@@ -464,6 +410,7 @@
                                 </center>
                             </div>
                     </div>
+                    <br />
                     <div class="main-container">
                         <div class="main-heading">
                             Usage
@@ -498,10 +445,73 @@
                         <div class="main-subject">
                             In an HTML page, copy and paste the above lines metioned in Usage, inside the body tag.<br />
                             The only dependency is that you need to include the Component UI CSS file which is given below,
-                            <textarea class="cc-textarea" readonly><link href="componentui.css" type="text/css" rel="stylesheet"></textarea>
+                            <textarea class="cc-textarea-link" readonly><link href="https://kingslair.github.io/ComponentUI/css/componentui.css" type="text/css" rel="stylesheet"></textarea>
                             Once done, view your HTML page and see the changes.
                         </div>
                     </div>
+                </div>
+                <div id="tabcard">
+                    <div class="wrap"></div>
+                    <div class="main-container">
+                            <div class="main-heading">
+                                Component UI Tab Card
+                            </div>
+                            <div class="main-subject">
+                                <center>
+                                    <div class="cc-div-card">
+                                        <div class="cc-div-card-heading">
+                                            Hello World
+                                        </div>
+                                        <div class="cc-div-card-desc">
+                                            Lorem ipsum dolor sit amet.<br />
+                                            consectetur adipiscing elit.<br /> 
+                                            incididunt ut labore et dolore.<br />
+                                            magna aliqua. Ut enim ad minim.<br />
+                                            veniam, quis nostrud exercitation.<br />
+                                            laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                    </div>
+                    <br />
+                    <div class="main-container">
+                        <div class="main-heading">
+                            Usage
+                        </div>
+                        <div class="main-subject">
+                            Copy and paste the above lines metioned in Usage, inside the body tag. <br />
+                            For more information see Enviroment Requirement. <br /><br />
+                            <textarea class="cc-textarea-wide" readonly>
+                                <div class="cc-div-card">
+                                    <div class="cc-div-card-heading">
+                                        Hello World
+                                    </div>
+                                    <div class="cc-div-card-desc">
+                                        Lorem ipsum dolor sit amet.<br />
+                                        consectetur adipiscing elit.<br /> 
+                                        incididunt ut labore et dolore.<br />
+                                        magna aliqua. Ut enim ad minim.<br />
+                                        veniam, quis nostrud exercitation.<br />
+                                        laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="main-container">
+                        <div class="main-heading">
+                            Enviroment
+                        </div>
+                        <div class="main-subject">
+                            In an HTML page, copy and paste the above lines metioned in Usage, inside the body tag.<br />
+                            The only dependency is that you need to include the Component UI CSS file which is given below,
+                            <textarea class="cc-textarea-link" readonly><link href="https://kingslair.github.io/ComponentUI/css/componentui.css" type="text/css" rel="stylesheet"></textarea>
+                            Once done, view your HTML page and see the changes.
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
